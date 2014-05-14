@@ -1,0 +1,201 @@
+// bower:scss
+// endbower
+
+////////////////////////////////////////////////////////////
+//////////////////////////////////// BROWSER SPECIFIC STUFFS
+////////////////////////////////////////////////////////////
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////// TAGS
+////////////////////////////////////////////////////////////
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #3a8dc1;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// CONTAINERS
+////////////////////////////////////////////////////////////
+.header {
+    background-color: #EEE;
+    height: 40px;
+    border-bottom: 1px solid #DDD;
+}
+
+.body-container {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 16px;
+    // border: 2px solid orange;
+}
+
+// SIDEBAR //
+.sidebar {
+    width: 230px;
+    height: 490px;
+    display: inline-block;
+    // border: 2px solid red;
+}
+
+.sidebar-name {
+    margin-top: -8px;
+}
+
+.sidebar-username {
+    margin-top: -18px;
+    border-bottom: 1px solid #EEE;
+}
+
+.sidebar-location {
+    padding-top: 3px;
+}
+
+.sidebar-url {
+    margin-top: -6px;
+}
+
+.sidebar-join-date {
+    margin-top: -6px;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 5px;
+}
+
+.sidebar-counter-container {
+    padding-top: 12px;
+    border-bottom: 1px solid #EEE;
+}
+
+.sidebar-counter {
+    width: 73px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+}
+
+.sidebar-counter-number {
+    font-family: Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.sidebar-counter-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+}
+
+#profile-pic-container {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 8px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-pic {
+    width: 230px;
+    height: 230px;
+}
+
+// REPOS //
+.repos-container {
+    width: 735px;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    padding-left: 20px;
+    // border: 2px solid green;
+}
+
+.repo {
+    border-bottom: 1px solid #EEE;
+    border-top: 1px solid #EEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.repo-name {
+    font-family: Helvetica, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #3a8dc1;
+}
+
+.repo-description {
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 6px;
+}
+
+.repo-update {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+    padding-top: 6px;
+}
+
+.repo-language {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bold;
+    color: #666;
+    margin-top: -55px;
+    display: inline-block;
+}
+
+.repo-starred {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bold;
+    color: #666;
+    margin-top: -55px;
+    display: inline-block;
+}
