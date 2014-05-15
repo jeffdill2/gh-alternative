@@ -149,7 +149,6 @@ a {
 }
 
 .repo {
-    border-bottom: 1px solid #EEE;
     border-top: 1px solid #EEE;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -180,13 +179,22 @@ a {
     padding-top: 6px;
 }
 
+.repo-details {
+    float: right;
+    padding-top: 30px;
+
+    li {
+        display: inline;
+    }
+}
+
 .repo-language {
     font-family: Helvetica, sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: bold;
+    margin-right: 10px;
     color: #666;
-    margin-top: -55px;
     display: inline-block;
 }
 
@@ -195,7 +203,16 @@ a {
     font-size: 11px;
     font-style: normal;
     font-weight: bold;
+    margin-right: 10px;
     color: #666;
-    margin-top: -55px;
+    display: inline-block;
+}
+
+.repo-forked {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bold;
+    color: #666;
     display: inline-block;
 }
