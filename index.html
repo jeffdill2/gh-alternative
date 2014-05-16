@@ -1,0 +1,98 @@
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>GH-Pages Alternative</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/97fa3271.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/53274405.main.css><body><!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]--><!--////////////////////////////////////////////////////////
+        /////////////////////////////// BEGIN USER CREATED CODE HERE
+        /////////////////////////////////////////////////////////--><div class=header></div><div class=body-container><div class=sidebar></div><div class=repos-container></div></div><!-- SIDEBAR TEMPLATE --><script type=text/template id=sidebar-template><div id="profile-pic-container">
+                <img class="profile-pic" src=<%= avatar_url %>>
+            </div>
+
+            <div class="sidebar-name">
+                <h1><%= name %></h1>
+            </div>
+            
+            <div class="sidebar-username">
+                <h2><%= login %></h2>
+            </div>
+
+            <div class="sidebar-location">
+                <img src="../images/877f47f6.location-marker-icon.png" class="sidebar-small-image"><h3><%= location %></h3>
+            </div>
+
+            <div class="sidebar-url">
+                <img src="../images/8586632a.link-icon.png" class="sidebar-small-image"><a href=<%= blog %> target="#"><h3><%= blog %></h3></a>
+            </div>
+
+            <div class="sidebar-join-date">
+                <img src="../images/828ce86f.clock-gray-icon.png" class="sidebar-small-image"><h3>Joined on <%= moment(created_at).format("MMMM DD, YYYY") %></h3>
+            </div>
+
+            <div class="sidebar-counter-container">
+                <div class="sidebar-counter">
+                    <div class="sidebar-counter-number">
+                        <%= followers %>
+                    </div>
+
+                    <div class="sidebar-counter-text">
+                        Followers
+                    </div>
+                </div>
+
+                <div class="sidebar-counter">
+                    <div class="sidebar-counter-number">
+                        <%= starred %>
+                    </div>
+
+                    <div class="sidebar-counter-text">
+                        Starred
+                    </div>
+                </div>
+
+                <div class="sidebar-counter">
+                    <div class="sidebar-counter-number">
+                        <%= following %>
+                    </div>
+
+                    <div class="sidebar-counter-text">
+                        Following
+                    </div>
+                </div>
+            </div></script><!-- REPO TEMPLATE --><script type=text/template id=repos-template><div class="repo">
+                <div class="repo-name">
+                    <a href=<%= html_url %>><%= name %></a>
+                </div>
+
+                <div class="repo-description">
+                    <%= description %>
+                </div>
+
+                <div class="repo-update">
+                    Last updated <%= updated_at %>
+                </div>
+
+                <ul class="repo-details">
+                    <li>
+                        <div class="repo-language">
+                            <%= language %>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="repo-starred">
+                            <img src="../images/13ebee50.star-icon.png" class="repo-small-image"><%= stargazers_count %>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="repo-forked">
+                            <img src="../images/6edd3402.fork-icon.png" class="repo-small-image"><%= forks %>
+                        </div>
+                    </li>
+                </ul>
+            </div></script><!--////////////////////////////////////////////////////////
+        ///////////////////////////////// END USER CREATED CODE HERE
+        /////////////////////////////////////////////////////////--><script src=scripts/27c882be.vendor.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src=scripts/10d3569e.main.js></script>
