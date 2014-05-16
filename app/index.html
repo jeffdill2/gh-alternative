@@ -20,6 +20,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
         <!--////////////////////////////////////////////////////////
         /////////////////////////////// BEGIN USER CREATED CODE HERE
         /////////////////////////////////////////////////////////-->
@@ -31,6 +32,7 @@
             <div class="repos-container"></div>
         </div>
         
+        <!-- SIDEBAR TEMPLATE -->
         <script type="text/template" id="sidebar-template">
             <div id="profile-pic-container">
                 <img class="profile-pic" src=<%= avatar_url %>>
@@ -45,15 +47,15 @@
             </div>
 
             <div class="sidebar-location">
-                <h3><%= location %></h3>
+                <img src="../images/location-marker-icon.png" class="sidebar-small-image"><h3><%= location %></h3>
             </div>
 
             <div class="sidebar-url">
-                <a href=<%= blog %> target="#"><h3><%= blog %></h3></a>
+                <img src="../images/link-icon.png" class="sidebar-small-image"><a href=<%= blog %> target="#"><h3><%= blog %></h3></a>
             </div>
 
             <div class="sidebar-join-date">
-                <h3>Joined on <%= created_at %></h3>
+                <img src="../images/clock-gray-icon.png" class="sidebar-small-image"><h3>Joined on <%= moment(created_at).format("MMMM DD, YYYY") %></h3>
             </div>
 
             <div class="sidebar-counter-container">
@@ -89,6 +91,7 @@
             </div>
         </script>
 
+        <!-- REPO TEMPLATE -->
         <script type="text/template" id="repos-template">
             <div class="repo">
                 <div class="repo-name">
@@ -112,35 +115,29 @@
 
                     <li>
                         <div class="repo-starred">
-                            <%= stargazers_count %>
+                            <img src="../images/star-icon.png" class="repo-small-image"><%= stargazers_count %>
                         </div>
                     </li>
 
                     <li>
                         <div class="repo-forked">
-                            <%= forks %>
+                            <img src="../images/fork-icon.png" class="repo-small-image"><%= forks %>
                         </div>
                     </li>
                 </ul>
             </div>
         </script>
 
-        
-        <!--
-        <script type="text/template" class="good-morning-template">
-            <h1>Good Morning, <%= person %>.</h1>
-            <h2>You are looking <%= feeling %> today.</h2>
-        </script>
-        -->
-
         <!--////////////////////////////////////////////////////////
         ///////////////////////////////// END USER CREATED CODE HERE
         /////////////////////////////////////////////////////////-->
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/underscore/underscore.js"></script>
+        <script src="../bower_components/momentjs/moment.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
