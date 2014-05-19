@@ -59,72 +59,86 @@
             </div>
 
             <div class="sidebar-counter-container">
-                <div class="sidebar-counter">
-                    <div class="sidebar-counter-number">
-                        <%= followers %>
-                    </div>
+                <a href="https://github.com/<%= login %>/followers">
+                    <div class="sidebar-counter">
+                        <div class="sidebar-counter-number">
+                            <%= followers %>
+                        </div>
 
-                    <div class="sidebar-counter-text">
-                        Followers
+                        <div class="sidebar-counter-text">
+                            Followers
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="sidebar-counter">
-                    <div class="sidebar-counter-number">
-                        <%= starred %>
-                    </div>
+                <a href="https://github.com/stars">
+                    <div class="sidebar-counter">
+                        <div class="sidebar-counter-number">
+                            <%= starred %>
+                        </div>
 
-                    <div class="sidebar-counter-text">
-                        Starred
+                        <div class="sidebar-counter-text">
+                            Starred
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="sidebar-counter">
-                    <div class="sidebar-counter-number">
-                        <%= following %>
-                    </div>
+                <a href="https://github.com/<%= login %>/following">
+                    <div class="sidebar-counter">
+                        <div class="sidebar-counter-number">
+                            <%= following %>
+                        </div>
 
-                    <div class="sidebar-counter-text">
-                        Following
+                        <div class="sidebar-counter-text">
+                            Following
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </script>
 
         <!-- REPO TEMPLATE -->
         <script type="text/template" id="repos-template">
             <div class="repo">
-                <div class="repo-name">
-                    <a href=<%= html_url %>><%= name %></a>
+                <img src="../images/book-icon-big.png">
+                
+                <div class="repo-left-side">
+                    <div class="repo-name">
+                        <a href=<%= html_url %>><%= name %></a>
+                    </div>
+
+                    <div class="repo-description">
+                        <%= description %>
+                    </div>
+
+                    <div class="repo-update">
+                        Last updated on <%= moment(updated_at).format("MMMM DD, YYYY") %>
+                    </div>
+
+                    <ul class="repo-details">
+                        <li>
+                            <div class="repo-language">
+                                <%= language %>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="<%= html_url %>/stargazers">
+                                <div class="repo-starred">
+                                    <img src="../images/star-icon.png" class="repo-small-image"><%= stargazers_count %>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="<%= html_url %>/network">
+                                <div class="repo-forked">
+                                    <img src="../images/fork-icon.png" class="repo-small-image"><%= forks %>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="repo-description">
-                    <%= description %>
-                </div>
-
-                <div class="repo-update">
-                    Last updated <%= updated_at %>
-                </div>
-
-                <ul class="repo-details">
-                    <li>
-                        <div class="repo-language">
-                            <%= language %>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="repo-starred">
-                            <img src="../images/star-icon.png" class="repo-small-image"><%= stargazers_count %>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="repo-forked">
-                            <img src="../images/fork-icon.png" class="repo-small-image"><%= forks %>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </script>
 
